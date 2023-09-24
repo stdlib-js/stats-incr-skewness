@@ -95,7 +95,7 @@ G_1 = \frac{n^2}{(n-1)(n-2)} \frac{m_3}{s^3} = \frac{\sqrt{n(n-1)}}{n-2} \frac{\
 ## Usage
 
 ```javascript
-import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@deno/mod.js';
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.1.0-deno/mod.js';
 ```
 
 #### incrskewness()
@@ -151,7 +151,7 @@ skewness = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@deno/mod.js';
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.1.0-deno/mod.js';
 
 var accumulator;
 var v;
