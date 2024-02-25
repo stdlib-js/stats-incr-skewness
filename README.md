@@ -95,6 +95,11 @@ G_1 = \frac{n^2}{(n-1)(n-2)} \frac{m_3}{s^3} = \frac{\sqrt{n(n-1)}}{n-2} \frac{\
 ## Usage
 
 ```javascript
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-skewness/tags). For example,
+
+```javascript
 import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.2.1-esm/index.mjs';
 ```
 
@@ -156,7 +161,7 @@ skewness = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.2.1-esm/index.mjs';
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@esm/index.mjs';
 
 var accumulator;
 var v;
