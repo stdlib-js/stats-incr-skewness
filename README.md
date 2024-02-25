@@ -95,6 +95,11 @@ G_1 = \frac{n^2}{(n-1)(n-2)} \frac{m_3}{s^3} = \frac{\sqrt{n(n-1)}}{n-2} \frac{\
 ## Usage
 
 ```javascript
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-skewness/tags). For example,
+
+```javascript
 import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.2.1-deno/mod.js';
 ```
 
@@ -151,7 +156,7 @@ skewness = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@v0.2.1-deno/mod.js';
+import incrskewness from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-skewness@deno/mod.js';
 
 var accumulator;
 var v;
