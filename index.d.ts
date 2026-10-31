@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2019 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,28 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
-* Compute a corrected sample skewness incrementally.
+* If provided a value, the accumulator function returns an updated corrected sample skewness. If not provided a value, the accumulator function returns the current corrected sample skewness.
 *
-* @module @stdlib/stats-incr-skewness
+* ## Notes
+*
+* -   If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for all future invocations.
+*
+* @param x - value
+* @returns corrected sample skewness or null
+*/
+type accumulator = ( x?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a corrected sample skewness.
+*
+* @returns accumulator function
 *
 * @example
-* var incrskewness = require( '@stdlib/stats-incr-skewness' );
-*
 * var accumulator = incrskewness();
 *
 * var skewness = accumulator();
@@ -43,12 +55,9 @@
 * skewness = accumulator();
 * // returns ~0.492
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrskewness(): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrskewness;
